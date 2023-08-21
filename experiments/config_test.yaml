@@ -1,0 +1,57 @@
+common:
+    model:
+        point_arch: v2
+        point_len: 512
+        appear_arch: vgg
+        appear_len: 512
+        appear_skippool: True
+        appear_fpn: False
+
+        end_arch: v2
+        end_mode: avg
+
+        affinity_op: minus_abs # multiply or addminus
+        softmax_mode: dual_add
+
+        score_arch: branch_cls 
+        neg_threshold: 0
+
+        score_fusion_arch: C
+        test_mode: 2 #0:image;1:LiDAR;2:fusion
+
+    gt_det_ratio : 0
+    sample_max_len : 2
+    det_type: 3D
+    tracker_type: 3D
+    use_frustum: True
+    without_reflectivity: True
+    train_fix_iou: 1
+    train_fix_count: 0
+    val_fix_iou: 1
+    val_fix_count: 0
+    use_dropout: True
+    dropblock: 5
+
+    augmentation:
+        input_size: 224
+        test_resize: 224
+
+    workers: 1
+    batch_size: 1
+    lr_scheduler:
+        optim: Adam
+        type: one_cycle
+        base_lr: 0.0004
+        lr_max: 0.0006
+        moms: [0.95, 0.85]
+        div_factor: 10.0
+        pct_start: 0.4
+        max_iter: 66660 # 40 * 3333
+
+    val_freq: 3333 # exact num of samples in 1 epoch with pp
+    print_freq: 100
+        
+    test_root: /data/testing
+    test_source: /data/testing/
+    test_link: ./data/test.txt
+    test_det : ./data/detections/perma_test

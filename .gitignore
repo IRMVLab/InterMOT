@@ -1,0 +1,16 @@
+docs/
+.DS_Store
+build
+.git
+*.egg-info
+dist
+output/
+
+backup
+__pycache__
+checkpoints/
+.vscode/
+logs/
+nohup.out
+
+.python-version
