@@ -51,7 +51,7 @@ common:
     val_freq: 3333 # exact num of samples in 1 epoch with pp
     print_freq: 100
         
-    test_root: /data/testing
-    test_source: /data/testing/
+    test_root: dataset/testing
+    test_source: dataset/testing/
     test_link: ./data/test.txt
     test_det : ./data/detections/perma_test

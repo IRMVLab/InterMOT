@@ -48,8 +48,8 @@ common:
     val_freq: 3333 # exact num of samples in 1 epoch with pp
     print_freq: 100
 
-    val_root: /data/training
-    val_source: /data/training/
+    val_root: dataset/training
+    val_source: dataset/training/
     val_link : ./data/val.txt
     val_det : ./data/detections/rrc_train
     
