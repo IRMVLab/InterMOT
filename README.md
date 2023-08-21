@@ -4,7 +4,7 @@
 
 Multiple object tracking (MOT) is a significant task in achieving autonomous driving. Previous fusion methods usually fuse the top-level features after the backbones extract the features from different modalities. In this paper, we first introduce PointNet++ to obtain multi-scale deep representations of point cloud to make it adaptive to our proposed Interactive Feature Fusion between multi-scale features of images and point clouds. Specifically, through multi-scale interactive query and fusion between pixel-level and point-level features, our method, can obtain more distinguishing features to improve the performance of multiple object tracking. 
 
-For more details, please refer our paper [Interactive Multi-scale Fusion of 2D and 3D Features for Multi-object Tracking](https://arxiv.org/abs/2203.16268).
+For more details, please refer our paper [Interactive Multi-scale Fusion of 2D and 3D Features for Multi-Object Tracking (TITS 2023)](https://arxiv.org/abs/2203.16268) .
 
 ## Install
 
