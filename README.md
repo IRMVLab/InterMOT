@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 We provide the data split used in our paper in the `data` directory. You need to download and unzip the data from the [KITTI Tracking Benchmark](http://www.cvlibs.net/datasets/kitti/eval_tracking.php). You may follow [Second](https://github.com/traveller59/second.pytorch) for dataset preparation. Do remember to change the path in the configs.
 
-The RRC detection results for training are obtained from [MOTBeyondPixels](https://github.com/JunaidCS032/MOTBeyondPixels). We use [PermaTrack](https://github.com/TRI-ML/permatrack) detection results provided by [OC-SORT](https://github.com/noahcao/OC_SORT/blob/master/docs/GET_STARTED.md) for the [KITTI Tracking Benchmark](http://www.cvlibs.net/datasets/kitti/eval_tracking.php). The detections are provided in *data/* already.
+The RRC detection results for training are obtained from [MOTBeyondPixels](https://github.com/JunaidCS032/MOTBeyondPixels). We use [PermaTrack](https://github.com/TRI-ML/permatrack) detection results provided by [OC-SORT](https://github.com/noahcao/OC_SORT/blob/master/docs/GET_STARTED.md) for the [KITTI Tracking Benchmark](http://www.cvlibs.net/datasets/kitti/eval_tracking.php). The detections are provided in *data/detections* already.
 
 
 ## Usage
